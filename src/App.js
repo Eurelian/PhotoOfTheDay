@@ -4,14 +4,14 @@ import Home from "./components/home";
 import NasaPhoto from "./components/photo";
 
 import "./App.css";
-
+const apiKey = process.env.REACT_APP_NASA_KEY;
 function App() {
 	const [data, setData] = useState("");
 
 	useEffect(() => {
 		const fetchData = async () => {
 			const res = await fetch(
-				"https://api.nasa.gov/planetary/apod?api_key=mQvhnhHXxMsA2CYZFoJMIz035diFX7NXjl7fjjhQ"
+				`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`
 			)
 				.then((res) => res.json())
 				.then((res) => setData(res))
