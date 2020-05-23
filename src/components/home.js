@@ -14,7 +14,7 @@ const StyledLink = styled.div`
 	color: white;
 	transition: all 0.5s ease;
 	text-align: center;
-	box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.3);
 	&:hover {
 		transform: translateY(-5px);
 		color: #f2a71b;
@@ -23,7 +23,7 @@ const StyledLink = styled.div`
 
 	&: active {
 		transform: translateY(-2px);
-		box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.3);
 	}
 `;
 
