@@ -11,7 +11,7 @@ function App() {
 	useEffect(() => {
 		const fetchData = async () => {
 			const res = await fetch(
-				`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`
+				"https://api.nasa.gov/planetary/apod?api_key=mQvhnhHXxMsA2CYZFoJMIz035diFX7NXjl7fjjhQ"
 			)
 				.then((res) => res.json())
 				.then((res) => setData(res))
